@@ -1,14 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://ch62t3fyqwewl"]
+[gd_scene load_steps=7 format=3 uid="uid://ch62t3fyqwewl"]
 
 [ext_resource type="PackedScene" uid="uid://bcc8oj03us58m" path="res://scenes/floor.tscn" id="1_8bekm"]
 [ext_resource type="PackedScene" uid="uid://bh0okld7eotwy" path="res://scenes/walls.tscn" id="2_la3pm"]
+[ext_resource type="PackedScene" uid="uid://dvryugb3s0uvq" path="res://scenes/death.tscn" id="2_mftbx"]
 [ext_resource type="PackedScene" uid="uid://b6ckukcavm178" path="res://scenes/paddle.tscn" id="3_stw6c"]
+[ext_resource type="PackedScene" uid="uid://c1l1e2b63oi86" path="res://scenes/ball.tscn" id="3_xgd2g"]
+[ext_resource type="PackedScene" uid="uid://8d010vugb3v8" path="res://scenes/UI.tscn" id="6_47ane"]
 
 [node name="Main" type="Node2D"]
 
-[node name="Node2D" parent="." instance=ExtResource("1_8bekm")]
+[node name="Floor" parent="." instance=ExtResource("1_8bekm")]
 position = Vector2(4, 640)
 scale = Vector2(1, 5)
+
+[node name="Death" parent="." instance=ExtResource("2_mftbx")]
+position = Vector2(-1, -9)
 
 [node name="Lower Ceiling" parent="." instance=ExtResource("2_la3pm")]
 position = Vector2(0, 95)
@@ -27,5 +33,10 @@ position = Vector2(365, -1)
 rotation = 1.5708
 scale = Vector2(1, 0.57)
 
+[node name="Ball" parent="." instance=ExtResource("3_xgd2g")]
+position = Vector2(188, 426)
+
 [node name="Paddle" parent="." instance=ExtResource("3_stw6c")]
 position = Vector2(170, 575)
+
+[node name="Ui" parent="." instance=ExtResource("6_47ane")]
