@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://8d010vugb3v8"]
+[gd_scene load_steps=3 format=3 uid="uid://8d010vugb3v8"]
 
+[ext_resource type="Script" path="res://scripts/UI.gd" id="1_h06ur"]
 [ext_resource type="FontFile" uid="uid://c5kx0a4jlfav2" path="res://assets/Kenney Blocks.ttf" id="1_q2p8a"]
 
 [node name="Ui" type="CanvasLayer"]
+script = ExtResource("1_h06ur")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 anchors_preset = 10
@@ -20,19 +22,19 @@ size_flags_vertical = 4
 layout_mode = 2
 size_flags_horizontal = 0
 theme_override_fonts/font = ExtResource("1_q2p8a")
-theme_override_font_sizes/font_size = 64
+theme_override_font_sizes/font_size = 32
 text = "0"
 
 [node name="Lives" type="Label" parent="MarginContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_fonts/font = ExtResource("1_q2p8a")
-theme_override_font_sizes/font_size = 64
+theme_override_font_sizes/font_size = 32
 text = "0"
 
 [node name="Level" type="Label" parent="MarginContainer"]
 layout_mode = 2
 size_flags_horizontal = 8
 theme_override_fonts/font = ExtResource("1_q2p8a")
-theme_override_font_sizes/font_size = 64
+theme_override_font_sizes/font_size = 32
 text = "0"

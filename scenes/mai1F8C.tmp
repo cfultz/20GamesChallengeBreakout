@@ -42,5 +42,3 @@ position = Vector2(188, 426)
 position = Vector2(170, 575)
 
 [node name="Ui" parent="." instance=ExtResource("6_47ane")]
-
-[connection signal="death" from="Death" to="." method="_on_player_death"]

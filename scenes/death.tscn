@@ -14,3 +14,4 @@ scale = Vector2(0.75, 0.75)
 shape = SubResource("RectangleShape2D_f2ijp")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="death" from="." to="." method="_on_death"]
