@@ -1,0 +1,339 @@
+[gd_scene load_steps=8 format=3 uid="uid://bcc8oj03us58m"]
+
+[ext_resource type="Texture2D" uid="uid://dwv6kt1f4bq2u" path="res://assets/floor1.png" id="1_5oq73"]
+[ext_resource type="Texture2D" uid="uid://g5wvl0rhg4gk" path="res://assets/floor2.png" id="2_rann0"]
+[ext_resource type="Texture2D" uid="uid://dtqqqbexjolid" path="res://assets/floor3.png" id="3_457oh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n0qds"]
+size = Vector2(360, 5)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sj8aw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_457oh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_5oq73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_rann0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s27xs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_457oh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_5oq73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_rann0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tetf4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_rann0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_5oq73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_457oh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(176, -2.5)
+shape = SubResource("RectangleShape2D_n0qds")
+
+[node name="Floor Animation" type="Node2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(0, -4)
+sprite_frames = SubResource("SpriteFrames_sj8aw")
+autoplay = "default"
+frame_progress = 0.46838
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(8, -4)
+sprite_frames = SubResource("SpriteFrames_s27xs")
+autoplay = "default"
+frame_progress = 0.336861
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(16, -4)
+sprite_frames = SubResource("SpriteFrames_tetf4")
+autoplay = "default"
+frame_progress = 0.932542
+
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(24, -4)
+sprite_frames = SubResource("SpriteFrames_sj8aw")
+autoplay = "default"
+frame_progress = 0.168937
+
+[node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(32, -4)
+sprite_frames = SubResource("SpriteFrames_s27xs")
+autoplay = "default"
+frame_progress = 0.947735
+
+[node name="AnimatedSprite2D6" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(40, -4)
+sprite_frames = SubResource("SpriteFrames_tetf4")
+autoplay = "default"
+frame_progress = 0.648661
+
+[node name="AnimatedSprite2D7" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(48, -4)
+sprite_frames = SubResource("SpriteFrames_sj8aw")
+autoplay = "default"
+frame_progress = 0.517813
+
+[node name="AnimatedSprite2D8" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(56, -4)
+sprite_frames = SubResource("SpriteFrames_s27xs")
+autoplay = "default"
+frame_progress = 0.961965
+
+[node name="AnimatedSprite2D9" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(64, -4)
+sprite_frames = SubResource("SpriteFrames_tetf4")
+autoplay = "default"
+frame_progress = 0.712435
+
+[node name="AnimatedSprite2D10" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(72, -4)
+sprite_frames = SubResource("SpriteFrames_sj8aw")
+autoplay = "default"
+frame_progress = 0.406257
+
+[node name="AnimatedSprite2D11" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(80, -4)
+sprite_frames = SubResource("SpriteFrames_s27xs")
+autoplay = "default"
+frame_progress = 0.889894
+
+[node name="AnimatedSprite2D12" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(88, -4)
+sprite_frames = SubResource("SpriteFrames_tetf4")
+autoplay = "default"
+frame_progress = 0.655782
+
+[node name="AnimatedSprite2D13" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(96, -4)
+sprite_frames = SubResource("SpriteFrames_sj8aw")
+autoplay = "default"
+frame_progress = 0.617623
+
+[node name="AnimatedSprite2D14" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(104, -4)
+sprite_frames = SubResource("SpriteFrames_s27xs")
+autoplay = "default"
+frame_progress = 0.368605
+
+[node name="AnimatedSprite2D15" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(112, -4)
+sprite_frames = SubResource("SpriteFrames_tetf4")
+autoplay = "default"
+frame_progress = 0.988089
+
+[node name="AnimatedSprite2D16" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(120, -4)
+sprite_frames = SubResource("SpriteFrames_sj8aw")
+autoplay = "default"
+frame_progress = 0.194407
+
+[node name="AnimatedSprite2D17" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(128, -4)
+sprite_frames = SubResource("SpriteFrames_s27xs")
+autoplay = "default"
+frame_progress = 0.0628839
+
+[node name="AnimatedSprite2D18" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(136, -4)
+sprite_frames = SubResource("SpriteFrames_tetf4")
+autoplay = "default"
+frame_progress = 0.658569
+
+[node name="AnimatedSprite2D19" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(144, -4)
+sprite_frames = SubResource("SpriteFrames_sj8aw")
+autoplay = "default"
+frame_progress = 0.894961
+
+[node name="AnimatedSprite2D20" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(152, -4)
+sprite_frames = SubResource("SpriteFrames_s27xs")
+autoplay = "default"
+frame_progress = 0.673764
+
+[node name="AnimatedSprite2D21" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(160, -4)
+sprite_frames = SubResource("SpriteFrames_tetf4")
+autoplay = "default"
+frame_progress = 0.374693
+
+[node name="AnimatedSprite2D22" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(168, -4)
+sprite_frames = SubResource("SpriteFrames_sj8aw")
+autoplay = "default"
+frame_progress = 0.24384
+
+[node name="AnimatedSprite2D23" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(176, -4)
+sprite_frames = SubResource("SpriteFrames_s27xs")
+autoplay = "default"
+frame_progress = 0.687994
+
+[node name="AnimatedSprite2D24" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(184, -4)
+sprite_frames = SubResource("SpriteFrames_tetf4")
+autoplay = "default"
+frame_progress = 0.438464
+
+[node name="AnimatedSprite2D25" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(192, -4)
+sprite_frames = SubResource("SpriteFrames_sj8aw")
+autoplay = "default"
+frame_progress = 0.132284
+
+[node name="AnimatedSprite2D26" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(200, -4)
+sprite_frames = SubResource("SpriteFrames_s27xs")
+autoplay = "default"
+frame_progress = 0.615922
+
+[node name="AnimatedSprite2D27" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(208, -4)
+sprite_frames = SubResource("SpriteFrames_tetf4")
+autoplay = "default"
+frame_progress = 0.381811
+
+[node name="AnimatedSprite2D28" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(216, -4)
+sprite_frames = SubResource("SpriteFrames_sj8aw")
+autoplay = "default"
+frame_progress = 0.343654
+
+[node name="AnimatedSprite2D29" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(224, -4)
+sprite_frames = SubResource("SpriteFrames_s27xs")
+autoplay = "default"
+frame_progress = 0.0946329
+
+[node name="AnimatedSprite2D30" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(232, -4)
+sprite_frames = SubResource("SpriteFrames_tetf4")
+autoplay = "default"
+frame_progress = 0.714115
+
+[node name="AnimatedSprite2D31" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(240, -4)
+sprite_frames = SubResource("SpriteFrames_sj8aw")
+autoplay = "default"
+frame_progress = 0.194407
+
+[node name="AnimatedSprite2D32" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(248, -4)
+sprite_frames = SubResource("SpriteFrames_s27xs")
+autoplay = "default"
+frame_progress = 0.0628839
+
+[node name="AnimatedSprite2D33" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(256, -4)
+sprite_frames = SubResource("SpriteFrames_tetf4")
+autoplay = "default"
+frame_progress = 0.658569
+
+[node name="AnimatedSprite2D34" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(264, -4)
+sprite_frames = SubResource("SpriteFrames_sj8aw")
+autoplay = "default"
+frame_progress = 0.894961
+
+[node name="AnimatedSprite2D35" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(272, -4)
+sprite_frames = SubResource("SpriteFrames_s27xs")
+autoplay = "default"
+frame_progress = 0.673764
+
+[node name="AnimatedSprite2D36" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(280, -4)
+sprite_frames = SubResource("SpriteFrames_tetf4")
+autoplay = "default"
+frame_progress = 0.374693
+
+[node name="AnimatedSprite2D37" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(288, -4)
+sprite_frames = SubResource("SpriteFrames_sj8aw")
+autoplay = "default"
+frame_progress = 0.24384
+
+[node name="AnimatedSprite2D38" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(296, -4)
+sprite_frames = SubResource("SpriteFrames_s27xs")
+autoplay = "default"
+frame_progress = 0.687994
+
+[node name="AnimatedSprite2D39" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(304, -4)
+sprite_frames = SubResource("SpriteFrames_tetf4")
+autoplay = "default"
+frame_progress = 0.438464
+
+[node name="AnimatedSprite2D40" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(312, -4)
+sprite_frames = SubResource("SpriteFrames_sj8aw")
+autoplay = "default"
+frame_progress = 0.132284
+
+[node name="AnimatedSprite2D41" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(320, -4)
+sprite_frames = SubResource("SpriteFrames_s27xs")
+autoplay = "default"
+frame_progress = 0.615922
+
+[node name="AnimatedSprite2D42" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(328, -4)
+sprite_frames = SubResource("SpriteFrames_tetf4")
+autoplay = "default"
+frame_progress = 0.381811
+
+[node name="AnimatedSprite2D43" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(336, -4)
+sprite_frames = SubResource("SpriteFrames_sj8aw")
+autoplay = "default"
+frame_progress = 0.343654
+
+[node name="AnimatedSprite2D44" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(344, -4)
+sprite_frames = SubResource("SpriteFrames_s27xs")
+autoplay = "default"
+frame_progress = 0.0946329
+
+[node name="AnimatedSprite2D45" type="AnimatedSprite2D" parent="Floor Animation"]
+position = Vector2(352, -4)
+sprite_frames = SubResource("SpriteFrames_tetf4")
+autoplay = "default"
+frame_progress = 0.714115
