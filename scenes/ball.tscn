@@ -12,8 +12,14 @@ floor_stop_on_slope = false
 floor_max_angle = 1.0472
 script = ExtResource("1_s8lgq")
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_0fsbn")
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_gws8y")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_0fsbn")
+debug_color = Color(0.952941, 0, 0.556863, 0.419608)

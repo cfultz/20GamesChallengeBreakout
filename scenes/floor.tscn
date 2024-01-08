@@ -72,91 +72,91 @@ shape = SubResource("RectangleShape2D_n0qds")
 position = Vector2(0, -4)
 sprite_frames = SubResource("SpriteFrames_sj8aw")
 autoplay = "default"
-frame_progress = 0.510271
+frame_progress = 0.31862
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Floor Animation"]
 position = Vector2(8, -4)
 sprite_frames = SubResource("SpriteFrames_s27xs")
 autoplay = "default"
-frame_progress = 0.378752
+frame_progress = 0.1871
 
 [node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="Floor Animation"]
 position = Vector2(16, -4)
 sprite_frames = SubResource("SpriteFrames_tetf4")
 autoplay = "default"
-frame_progress = 0.974433
+frame_progress = 0.782781
 
 [node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="Floor Animation"]
 position = Vector2(24, -4)
 sprite_frames = SubResource("SpriteFrames_sj8aw")
 autoplay = "default"
-frame_progress = 0.210828
+frame_progress = 0.0191759
 
 [node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="Floor Animation"]
 position = Vector2(32, -4)
 sprite_frames = SubResource("SpriteFrames_s27xs")
 autoplay = "default"
-frame_progress = 0.989625
+frame_progress = 0.797974
 
 [node name="AnimatedSprite2D6" type="AnimatedSprite2D" parent="Floor Animation"]
 position = Vector2(40, -4)
 sprite_frames = SubResource("SpriteFrames_tetf4")
 autoplay = "default"
-frame_progress = 0.690552
+frame_progress = 0.498901
 
 [node name="AnimatedSprite2D7" type="AnimatedSprite2D" parent="Floor Animation"]
 position = Vector2(48, -4)
 sprite_frames = SubResource("SpriteFrames_sj8aw")
 autoplay = "default"
-frame_progress = 0.559704
+frame_progress = 0.368053
 
 [node name="AnimatedSprite2D8" type="AnimatedSprite2D" parent="Floor Animation"]
 position = Vector2(56, -4)
 sprite_frames = SubResource("SpriteFrames_s27xs")
 autoplay = "default"
-frame_progress = 0.00385578
+frame_progress = 0.812204
 
 [node name="AnimatedSprite2D9" type="AnimatedSprite2D" parent="Floor Animation"]
 position = Vector2(64, -4)
 sprite_frames = SubResource("SpriteFrames_tetf4")
 autoplay = "default"
-frame_progress = 0.754326
+frame_progress = 0.562675
 
 [node name="AnimatedSprite2D10" type="AnimatedSprite2D" parent="Floor Animation"]
 position = Vector2(72, -4)
 sprite_frames = SubResource("SpriteFrames_sj8aw")
 autoplay = "default"
-frame_progress = 0.448148
+frame_progress = 0.256496
 
 [node name="AnimatedSprite2D11" type="AnimatedSprite2D" parent="Floor Animation"]
 position = Vector2(80, -4)
 sprite_frames = SubResource("SpriteFrames_s27xs")
 autoplay = "default"
-frame_progress = 0.931785
+frame_progress = 0.740134
 
 [node name="AnimatedSprite2D12" type="AnimatedSprite2D" parent="Floor Animation"]
 position = Vector2(88, -4)
 sprite_frames = SubResource("SpriteFrames_tetf4")
 autoplay = "default"
-frame_progress = 0.697673
+frame_progress = 0.506022
 
 [node name="AnimatedSprite2D13" type="AnimatedSprite2D" parent="Floor Animation"]
 position = Vector2(96, -4)
 sprite_frames = SubResource("SpriteFrames_sj8aw")
 autoplay = "default"
-frame_progress = 0.659514
+frame_progress = 0.467863
 
 [node name="AnimatedSprite2D14" type="AnimatedSprite2D" parent="Floor Animation"]
 position = Vector2(104, -4)
 sprite_frames = SubResource("SpriteFrames_s27xs")
 autoplay = "default"
-frame_progress = 0.410496
+frame_progress = 0.218844
 
 [node name="AnimatedSprite2D15" type="AnimatedSprite2D" parent="Floor Animation"]
 position = Vector2(112, -4)
 sprite_frames = SubResource("SpriteFrames_tetf4")
 autoplay = "default"
-frame_progress = 0.0299796
+frame_progress = 0.838328
 
 [node name="AnimatedSprite2D16" type="AnimatedSprite2D" parent="Floor Animation"]
 position = Vector2(120, -4)

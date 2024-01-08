@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://ch62t3fyqwewl"]
+[gd_scene load_steps=9 format=3 uid="uid://ch62t3fyqwewl"]
 
 [ext_resource type="PackedScene" uid="uid://bcc8oj03us58m" path="res://scenes/floor.tscn" id="1_8bekm"]
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_ccper"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://b6ckukcavm178" path="res://scenes/paddle.tscn" id="3_stw6c"]
 [ext_resource type="PackedScene" uid="uid://c1l1e2b63oi86" path="res://scenes/ball.tscn" id="3_xgd2g"]
 [ext_resource type="PackedScene" uid="uid://8d010vugb3v8" path="res://scenes/UI.tscn" id="6_47ane"]
+[ext_resource type="PackedScene" uid="uid://opyt4bcypn4t" path="res://scenes/block.tscn" id="7_y7rkh"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_ccper")
@@ -36,11 +37,87 @@ rotation = 1.5708
 scale = Vector2(1, 0.57)
 
 [node name="Ball" parent="." instance=ExtResource("3_xgd2g")]
-position = Vector2(188, 426)
+position = Vector2(180, 425)
 
 [node name="Paddle" parent="." instance=ExtResource("3_stw6c")]
 position = Vector2(170, 575)
 
 [node name="Ui" parent="." instance=ExtResource("6_47ane")]
+
+[node name="Block" parent="." instance=ExtResource("7_y7rkh")]
+position = Vector2(-6, 0)
+
+[node name="Block2" parent="." instance=ExtResource("7_y7rkh")]
+position = Vector2(78, 0)
+
+[node name="Block3" parent="." instance=ExtResource("7_y7rkh")]
+position = Vector2(161, 0)
+
+[node name="Block4" parent="." instance=ExtResource("7_y7rkh")]
+position = Vector2(244, 0)
+
+[node name="Block5" parent="." instance=ExtResource("7_y7rkh")]
+modulate = Color(1, 1, 0.101961, 1)
+position = Vector2(-6, -23)
+
+[node name="Block6" parent="." instance=ExtResource("7_y7rkh")]
+modulate = Color(1, 1, 0.101961, 1)
+position = Vector2(78, -23)
+
+[node name="Block7" parent="." instance=ExtResource("7_y7rkh")]
+modulate = Color(1, 1, 0.101961, 1)
+position = Vector2(161, -23)
+
+[node name="Block8" parent="." instance=ExtResource("7_y7rkh")]
+modulate = Color(1, 1, 0.101961, 1)
+position = Vector2(244, -23)
+
+[node name="Block9" parent="." instance=ExtResource("7_y7rkh")]
+modulate = Color(0.156863, 0.666667, 0, 1)
+position = Vector2(-6, -46)
+
+[node name="Block10" parent="." instance=ExtResource("7_y7rkh")]
+modulate = Color(0.156863, 0.666667, 0, 1)
+position = Vector2(78, -46)
+
+[node name="Block11" parent="." instance=ExtResource("7_y7rkh")]
+modulate = Color(0.156863, 0.666667, 0, 1)
+position = Vector2(161, -46)
+
+[node name="Block12" parent="." instance=ExtResource("7_y7rkh")]
+modulate = Color(0.156863, 0.666667, 0, 1)
+position = Vector2(244, -46)
+
+[node name="Block13" parent="." instance=ExtResource("7_y7rkh")]
+modulate = Color(0.0823529, 0.337255, 1, 1)
+position = Vector2(-6, -69)
+
+[node name="Block14" parent="." instance=ExtResource("7_y7rkh")]
+modulate = Color(0.0823529, 0.337255, 1, 1)
+position = Vector2(78, -69)
+
+[node name="Block15" parent="." instance=ExtResource("7_y7rkh")]
+modulate = Color(0.0823529, 0.337255, 1, 1)
+position = Vector2(161, -69)
+
+[node name="Block16" parent="." instance=ExtResource("7_y7rkh")]
+modulate = Color(0.0823529, 0.337255, 1, 1)
+position = Vector2(244, -69)
+
+[node name="Block17" parent="." instance=ExtResource("7_y7rkh")]
+modulate = Color(1, 0.180392, 0, 1)
+position = Vector2(-6, -92)
+
+[node name="Block18" parent="." instance=ExtResource("7_y7rkh")]
+modulate = Color(1, 0.180392, 0, 1)
+position = Vector2(78, -92)
+
+[node name="Block19" parent="." instance=ExtResource("7_y7rkh")]
+modulate = Color(1, 0.180392, 0, 1)
+position = Vector2(161, -92)
+
+[node name="Block20" parent="." instance=ExtResource("7_y7rkh")]
+modulate = Color(1, 0.180392, 0, 1)
+position = Vector2(244, -92)
 
 [connection signal="death" from="Death" to="." method="_on_player_death"]

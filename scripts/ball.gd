@@ -2,8 +2,8 @@ extends CharacterBody2D
 
 class_name Ball
 
-@export var initial_speed = 10
-@export var speed_multiplier = 1.05
+@export var initial_speed = 8
+@export var speed_multiplier = 1.03
 
 var ball_speed = initial_speed
 
@@ -20,5 +20,5 @@ func _physics_process(delta):
 	
 func start_ball():
 	randomize()
-	velocity.x = [1, 2][randi() % 2] * initial_speed
+	velocity.x = [-2, 2][randi() % 2] * initial_speed
 	velocity.y = [1, 2][randi() % 2] * initial_speed
